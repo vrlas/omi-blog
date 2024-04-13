@@ -59,7 +59,7 @@ hexo.extend.filter.register('before_post_render', data => {
     n++
     // const cover = randomCover ? addUuidToUrl(randomCover) : randomCover
     data.cover = randomCover
-    coverVal = cover // update coverVal
+    coverVal = randomCover // update coverVal
   }
 
   if (coverVal && (coverVal.indexOf('//') !== -1 || imgTestReg.test(coverVal))) {
