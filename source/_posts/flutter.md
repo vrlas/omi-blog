@@ -1,7 +1,5 @@
 ---
 title: flutter整理
-top_img: /images/wallpapers/4.jpg
-cover: /images/wallpapers/4.jpg
 tags:
   - dart
   - flutter

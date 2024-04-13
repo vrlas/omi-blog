@@ -1,7 +1,5 @@
 ---
 title: 前端面试题
-top_img: /images/wallpapers/5.jpg
-cover: /images/wallpapers/5.jpg
 tags:
   - 面试题
 categories:

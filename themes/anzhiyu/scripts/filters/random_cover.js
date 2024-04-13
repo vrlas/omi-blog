@@ -4,6 +4,7 @@
  */
 
 'use strict'
+let n = 0
 
 hexo.extend.filter.register('before_post_render', data => {
   const imgTestReg = /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i
@@ -19,8 +20,11 @@ hexo.extend.filter.register('before_post_render', data => {
     const { cover: { default_cover: defaultCover } } = hexo.theme.config
     if (!defaultCover) return false
     if (!Array.isArray(defaultCover)) return defaultCover
-    const num = Math.floor(Math.random() * defaultCover.length)
-    return defaultCover[num]
+    // const num = Math.floor(Math.random() * defaultCover.length)
+    if (n === defaultCover.length - 1) {
+      n = 0
+    }
+    return defaultCover[n]
   }
 
   if (coverVal === false) return data
@@ -52,6 +56,7 @@ hexo.extend.filter.register('before_post_render', data => {
   // If cover is not set, use random cover
   if (!coverVal) {
     const randomCover = randomCoverFn()
+    n++
     const cover = randomCover ? addUuidToUrl(randomCover) : randomCover
     data.cover = cover
     coverVal = cover // update coverVal

@@ -1,7 +1,5 @@
 ---
 title: cesium入门指南
-top_img: /images/wallpapers/2.jpg
-cover: /images/wallpapers/2.jpg
 tags:
   - 三维
   - gis

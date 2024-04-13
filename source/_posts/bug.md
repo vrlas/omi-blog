@@ -1,7 +1,5 @@
 ---
 title: bug修复
-top_img: /images/wallpapers/1.jpg
-cover: /images/wallpapers/1.jpg
 tags:
   - 前端
   - bug
