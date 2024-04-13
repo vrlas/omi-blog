@@ -1,8 +1,8 @@
 ---
 title: flutter整理
 date: 2023-06-08
-top_img: https://sineava.vercel.app/img/cover/bg-03.jpg
-cover: https://sineava.vercel.app/img/cover/bg-03.jpg
+top_img: /images/wallpapers/4.jpg
+cover: /images/wallpapers/4.jpg
 tags: ['dart', 'flutter']
 categories: ['跨平台']
 ---

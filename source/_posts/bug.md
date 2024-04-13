@@ -1,8 +1,8 @@
 ---
 title: bug修复
 date: 2024-04-01
-top_img: https://sineava.vercel.app/img/cover/bg-01.jpg
-cover: https://sineava.vercel.app/img/cover/bg-01.jpg
+top_img: /images/wallpapers/1.jpg
+cover: /images/wallpapers/1.jpg
 tags: ['前端', 'bug']
 categories: ['前端']
 ---

@@ -1,8 +1,8 @@
 ---
 title: 代码片段
 date: 2024-03-02
-top_img: https://sineava.vercel.app/img/cover/bg-04.jpg
-cover: https://sineava.vercel.app/img/cover/bg-04.jpg
+top_img: /images/wallpapers/3.jpg
+cover: /images/wallpapers/3.jpg
 tags: ['前端', '代码']
 categories: ['前端']
 ---

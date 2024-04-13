@@ -34,8 +34,8 @@ nav:
     - title: 项目
       item:
         - name: omi物料库
-          link: https://omi-m.fun
-          icon: https://omi-m.fun/favicon.ico
+          link: https://material.omi-m.fun
+          icon: https://material.omi-m.fun/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -1063,7 +1063,7 @@ home_top:
     tips: 前端
     title: omi物料库
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://omi-m.fun
+    link: https://material.omi-m.fun
 
 # 朋友圈配置
 friends_vue:

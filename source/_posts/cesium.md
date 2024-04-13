@@ -1,8 +1,8 @@
 ---
 title: cesium入门指南
 date: 2023-04-28
-top_img: https://sineava.vercel.app/img/cover/bg-02.jpg
-cover: https://sineava.vercel.app/img/cover/bg-02.jpg
+top_img: /images/wallpapers/2.jpg
+cover: /images/wallpapers/2.jpg
 tags: ['三维', 'gis']
 categories: ['地图']
 ---

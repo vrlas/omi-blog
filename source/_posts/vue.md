@@ -1,8 +1,8 @@
 ---
 title: 重读vue3
 date: 2023-09-25
-top_img: https://sineava.vercel.app/img/cover/bg-08.jpg
-cover: https://sineava.vercel.app/img/cover/bg-08.jpg
+top_img: /images/wallpapers/7.jpg
+cover: /images/wallpapers/7.jpg
 tags: ['前端', 'vue']
 categories: ['前端']
 ---

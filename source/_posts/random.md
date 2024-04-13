@@ -1,8 +1,8 @@
 ---
 title: 编程随笔
 date: 2023-05-04
-top_img: https://sineava.vercel.app/img/cover/bg-05.jpg
-cover: https://sineava.vercel.app/img/cover/bg-05.jpg
+top_img: /images/wallpapers/6.jpg
+cover: /images/wallpapers/6.jpg
 tags: ['前端', '综合']
 categories: ['前端']
 sticky: 1
