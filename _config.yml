@@ -7,7 +7,7 @@ language: zh-CN
 timezone: ''
 
 url: http://example.com
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true
@@ -86,5 +86,14 @@ bangumi: # 追番设置
 
 search:
   path: search.xml
-  field: post
+  field: all
   content: true
+
+abbrlink:
+  alg: crc32
+  rep: hex
+
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

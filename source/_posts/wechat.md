@@ -1,10 +1,13 @@
 ---
 title: 微信原生小程序
-date: 2023-01-15
 top_img: /images/wallpapers/8.jpg
 cover: /images/wallpapers/8.jpg
-tags: ['wechat']
-categories: ['小程序']
+tags:
+  - wechat
+categories:
+  - 小程序
+abbrlink: 9bd382fd
+date: 2023-01-15 00:00:00
 ---
 
 ## 小程序框架

@@ -1,10 +1,14 @@
 ---
 title: bug修复
-date: 2024-04-01
 top_img: /images/wallpapers/1.jpg
 cover: /images/wallpapers/1.jpg
-tags: ['前端', 'bug']
-categories: ['前端']
+tags:
+  - 前端
+  - bug
+categories:
+  - 前端
+abbrlink: 7a806c4f
+date: 2024-04-01 00:00:00
 ---
 
 ## Git

@@ -1,10 +1,13 @@
 ---
 title: 前端面试题
-date: 2023-07-21
 top_img: /images/wallpapers/5.jpg
 cover: /images/wallpapers/5.jpg
-tags: ['面试题']
-categories: ['面试']
+tags:
+  - 面试题
+categories:
+  - 面试
+abbrlink: '20802113'
+date: 2023-07-21 00:00:00
 ---
 
 ## HTML

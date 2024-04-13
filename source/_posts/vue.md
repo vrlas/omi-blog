@@ -1,10 +1,14 @@
 ---
 title: 重读vue3
-date: 2023-09-25
 top_img: /images/wallpapers/7.jpg
 cover: /images/wallpapers/7.jpg
-tags: ['前端', 'vue']
-categories: ['前端']
+tags:
+  - 前端
+  - vue
+categories:
+  - 前端
+abbrlink: e6516a01
+date: 2023-09-25 00:00:00
 ---
 
 ## 基础

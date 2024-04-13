@@ -1,10 +1,14 @@
 ---
 title: 代码片段
-date: 2024-03-02
 top_img: /images/wallpapers/3.jpg
 cover: /images/wallpapers/3.jpg
-tags: ['前端', '代码']
-categories: ['前端']
+tags:
+  - 前端
+  - 代码
+categories:
+  - 前端
+abbrlink: '35215128'
+date: 2024-03-02 00:00:00
 ---
 
 ### JavaScript

@@ -1,11 +1,15 @@
 ---
 title: 编程随笔
-date: 2023-05-04
 top_img: /images/wallpapers/6.jpg
 cover: /images/wallpapers/6.jpg
-tags: ['前端', '综合']
-categories: ['前端']
+tags:
+  - 前端
+  - 综合
+categories:
+  - 前端
 sticky: 1
+abbrlink: 35a827fa
+date: 2023-05-04 00:00:00
 ---
 
 ## HTML

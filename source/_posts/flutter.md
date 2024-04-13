@@ -1,10 +1,14 @@
 ---
 title: flutter整理
-date: 2023-06-08
 top_img: /images/wallpapers/4.jpg
 cover: /images/wallpapers/4.jpg
-tags: ['dart', 'flutter']
-categories: ['跨平台']
+tags:
+  - dart
+  - flutter
+categories:
+  - 跨平台
+abbrlink: 2082a7c7
+date: 2023-06-08 00:00:00
 ---
 
 ## dart语法

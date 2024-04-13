@@ -1,10 +1,14 @@
 ---
 title: cesium入门指南
-date: 2023-04-28
 top_img: /images/wallpapers/2.jpg
 cover: /images/wallpapers/2.jpg
-tags: ['三维', 'gis']
-categories: ['地图']
+tags:
+  - 三维
+  - gis
+categories:
+  - 地图
+abbrlink: dd63b157
+date: 2023-04-28 00:00:00
 ---
 
 ## 基础
