@@ -331,7 +331,7 @@ valine:
   placeholder: 填写QQ邮箱就会使用QQ头像喔~. # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://omi-m.fun/ # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: /img/comment_bg.png # valine background
   emojiCDN: //i0.hdslb.com/bfs/emote/ # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
@@ -376,7 +376,7 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
