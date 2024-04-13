@@ -1033,9 +1033,9 @@ css_prefix: true
 home_top:
   enable: true # 开关
   timemode: date #date/updated
-  title: 生活明朗
-  subTitle: 万物可爱。
-  siteText: anheyu.com
+  title: 生能尽欢
+  subTitle: 死亦无憾。
+  siteText: OMI-M.FUN
   category:
     - name: 前端
       path: /categories/前端/
@@ -1204,7 +1204,7 @@ rightClickMenu:
 
 # 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
-  enable: true
+  enable: false
   img: https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png
 
 # 动效
