@@ -14,7 +14,7 @@ categories: ['面试']
 `怪异模式`: 浏览器使用自己的标准解析页面,可能会导致在不同浏览器呈现不一样的效果
 ### 标准盒模型与ie盒模型
 ![](/images/interview/1.png)
-![](https://img2024.cnblogs.com/blog/1608796/202404/1608796-20240403145524153-2104136966.png)
+![](/images/interview/2.png)
 
 ### 说下常见行内元素与块级元素,以及区别
 `inline(行内元素)`: 元素不会换行,无法设置宽高,只能包含文本和其他行内元素(`a` `span` `img` `button` `input` `label`)
@@ -30,11 +30,7 @@ categories: ['面试']
 - `async`下,js加载与执行与dom渲染并行(概率执行期间dom还没渲染完毕,拿不到dom)
 - `defer`下,js加载与dom渲染并行,等渲染完毕再执行加载的js
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/caf2f618530046658ab8e3b4a8699589~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
-
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/021b5dbeddb64db0a7099dc0a4dd076d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
-
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b8313e4787f04c79838fec9961bda0fb~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+![](/images/interview/3.png)
 
 ### 什么是重绘和回流
 `重绘`: 当网页的外观(颜色,背景,阴影等)发生改变时,浏览器需要重新绘制的过程
@@ -67,7 +63,7 @@ selector:focus {}
 ```
 ### left/top/right/bottom为0与宽高100%区别
 1. 可以让明确宽高的盒子水平垂直居中
-2. `让无框高的盒子填满父容器`
+2. 让无框高的盒子填满父容器
 3. 宽高100%如果存在其他子元素,会导致高度问题
 ## JavaScript
 ### cookie/sessionStorage/localStorage的区别

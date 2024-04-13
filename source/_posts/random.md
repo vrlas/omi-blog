@@ -213,7 +213,7 @@ removeAttribute(key)
 
 ## CSS
 ### box-shadow实现多边框
-![](1-1.png)
+![](/images/random/1.png)
 ```css
 background: black;
 box-shadow: 0 0 0 10px red,
@@ -221,8 +221,8 @@ box-shadow: 0 0 0 10px red,
             0 0 0 25px green;
 ```
 ### 条纹颜色
-![](1-2.png)
-![](1-3.png)
+![](/images/random/2.png)
+![](/images/random/3.png)
 ```css
 background: linear-gradient(red 33.3%, green 33.3%, green 66.6%, blue 66.6%);
 background-size: 100% 100px;
@@ -240,7 +240,7 @@ div {
 }
 ```
 ### 色轮创建
-![](1-4.png)
+![](/images/random/4.png)
 ```css
 background: conic-gradient(red, yellow, lime, aqua, blue, fuchsia, red);
 
@@ -248,7 +248,8 @@ background: conic-gradient(red, yellow, lime, aqua, blue, fuchsia, red);
 background: conic-gradient(red 60deg, green 60deg 120deg, blue 120deg);
 ```
 ### 方块背景
-![[1-5.png]]
+
+![](/images/random/5.png)
 ```css
 background-size: 50px 50px;
 background-image: linear-gradient(0deg,transparent 24%,rgba(201,195,195,.329) 25%,hsla(0,8%,80.4%,.05) 26%,transparent 27%,transparent 74%,hsla(0,5.2%,81%,.185) 75%,rgba(180,176,176,.05) 76%,transparent 77%,transparent),linear-gradient(90deg,transparent 24%,rgba(204,196,196,.226) 25%,hsla(0,4%,66.1%,.05) 26%,transparent 27%,transparent 74%,hsla(0,5.2%,81%,.185) 75%,rgba(180,176,176,.05) 76%,transparent 77%,transparent);
