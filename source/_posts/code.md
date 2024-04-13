@@ -1,5 +1,7 @@
 ---
 title: 代码片段
+top_img: /images/wallpapers/3.jpg
+cover: /images/wallpapers/3.jpg
 tags:
   - 前端
   - 代码

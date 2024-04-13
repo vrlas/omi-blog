@@ -162,40 +162,30 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    - http://img.netbian.com/file/2024/0402/233653dOQFr.jpg
-    - http://img.netbian.com/file/2024/0405/233232R1I6k.jpg
-    - http://img.netbian.com/file/2024/0325/234506wB8aC.jpg
-    - http://img.netbian.com/file/2023/1130/002303Uatog.jpg
-    - http://img.netbian.com/file/2024/0314/003530t6mjH.jpg
-    - http://img.netbian.com/file/2024/0305/00085795W28.jpg
-    - http://img.netbian.com/file/2024/0215/082406RSMWJ.jpg
-    - http://img.netbian.com/file/2024/0211/124125I28nd.jpg
-    - http://img.netbian.com/file/2024/0204/214758dVddM.jpg
-    - http://img.netbian.com/file/2024/0204/214758dVddM.jpg
-    - http://img.netbian.com/file/2023/1214/005444z4Zr5.jpg
-    - http://img.netbian.com/file/2023/1124/000751vcVae.jpg
-    - http://img.netbian.com/file/2023/1106/010001m4Maq.jpg
-    - http://img.netbian.com/file/2023/1107/002843aVj7M.jpg
-    - http://img.netbian.com/file/2023/1009/154725fDlbG.jpg
-    - http://img.netbian.com/file/2023/0918/202034AhONC.jpg
-    - http://img.netbian.com/file/2023/0915/115745rZIcj.jpg
-    - http://img.netbian.com/file/2023/0913/182653KBt4P.jpg
-    - http://img.netbian.com/file/2023/0906/190426bMUhj.jpg
-    - http://img.netbian.com/file/2023/0612/114251zxyxr.jpg
-    - http://img.netbian.com/file/2023/0401/235634qdTvd.jpg
-    - http://img.netbian.com/file/2023/0304/003308CiAAM.jpg
-    - http://img.netbian.com/file/2023/0217/1539592UZsA.jpg
-    - http://img.netbian.com/file/2023/0217/1539592UZsA.jpg
-    
-    # 没服务器真痛苦
-    # - /images/wallpapers/1.jpg
-    # - /images/wallpapers/2.jpg
-    # - /images/wallpapers/3.jpg
-    # - /images/wallpapers/4.jpg
-    # - /images/wallpapers/5.jpg
-    # - /images/wallpapers/6.jpg
-    # - /images/wallpapers/7.jpg
-    # - /images/wallpapers/8.jpg
+    # - http://img.netbian.com/file/2024/0402/233653dOQFr.jpg
+    # - http://img.netbian.com/file/2024/0405/233232R1I6k.jpg
+    # - http://img.netbian.com/file/2024/0325/234506wB8aC.jpg
+    # - http://img.netbian.com/file/2023/1130/002303Uatog.jpg
+    # - http://img.netbian.com/file/2024/0314/003530t6mjH.jpg
+    # - http://img.netbian.com/file/2024/0305/00085795W28.jpg
+    # - http://img.netbian.com/file/2024/0215/082406RSMWJ.jpg
+    # - http://img.netbian.com/file/2024/0211/124125I28nd.jpg
+    # - http://img.netbian.com/file/2024/0204/214758dVddM.jpg
+    # - http://img.netbian.com/file/2024/0204/214758dVddM.jpg
+    # - http://img.netbian.com/file/2023/1214/005444z4Zr5.jpg
+    # - http://img.netbian.com/file/2023/1124/000751vcVae.jpg
+    # - http://img.netbian.com/file/2023/1106/010001m4Maq.jpg
+    # - http://img.netbian.com/file/2023/1107/002843aVj7M.jpg
+    # - http://img.netbian.com/file/2023/1009/154725fDlbG.jpg
+    # - http://img.netbian.com/file/2023/0918/202034AhONC.jpg
+    # - http://img.netbian.com/file/2023/0915/115745rZIcj.jpg
+    # - http://img.netbian.com/file/2023/0913/182653KBt4P.jpg
+    # - http://img.netbian.com/file/2023/0906/190426bMUhj.jpg
+    # - http://img.netbian.com/file/2023/0612/114251zxyxr.jpg
+    # - http://img.netbian.com/file/2023/0401/235634qdTvd.jpg
+    # - http://img.netbian.com/file/2023/0304/003308CiAAM.jpg
+    # - http://img.netbian.com/file/2023/0217/1539592UZsA.jpg
+    # - http://img.netbian.com/file/2023/0217/1539592UZsA.jpg
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:

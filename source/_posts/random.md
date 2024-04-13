@@ -1,5 +1,7 @@
 ---
 title: 编程随笔
+top_img: /images/wallpapers/6.jpg
+cover: /images/wallpapers/6.jpg
 tags:
   - 前端
   - 综合

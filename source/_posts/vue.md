@@ -1,5 +1,7 @@
 ---
 title: 重读vue3
+top_img: /images/wallpapers/7.jpg
+cover: /images/wallpapers/7.jpg
 tags:
   - 前端
   - vue
