@@ -57,8 +57,8 @@ hexo.extend.filter.register('before_post_render', data => {
   if (!coverVal) {
     const randomCover = randomCoverFn()
     n++
-    const cover = randomCover ? addUuidToUrl(randomCover) : randomCover
-    data.cover = cover
+    // const cover = randomCover ? addUuidToUrl(randomCover) : randomCover
+    data.cover = randomCover
     coverVal = cover // update coverVal
   }
 
