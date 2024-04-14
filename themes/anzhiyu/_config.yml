@@ -26,16 +26,16 @@ nav:
   travelling: false
   clock: false
   menu:
-    # - title: 网页
-    #   item:
-    #     - name: 博客
-    #       link: https://blog.anheyu.com/
-    #       icon: /img/favicon.ico
     - title: 项目
       item:
         - name: omi物料库
           link: https://material.omi-m.fun
           icon: https://material.omi-m.fun/favicon.ico
+    - title: 网页
+      item:
+        - name: omi图床
+          link: https://image.omi-m.fun/
+          icon: https://image.omi-m.fun/favicon.ico
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
