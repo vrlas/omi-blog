@@ -97,3 +97,16 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+douban:
+  id: 203633414
+  builtin: false
+  item_per_page: 10
+  meta_max_line: 4
+  customize_layout: page
+  book:
+    path: books/index.html
+    title: '书单'
+    quote: '当你从书页上抬眼，然后合上书本依然感觉到，住在那片光里'
+    option:
+  timeout: 10000

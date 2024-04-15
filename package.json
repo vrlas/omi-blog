@@ -19,6 +19,7 @@
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^2.0.1",
     "hexo-bilibili-bangumi": "^1.8.9",
+    "hexo-douban": "^2.2.6",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^2.0.0",
