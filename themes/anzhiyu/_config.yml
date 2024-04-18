@@ -11,8 +11,8 @@ menu:
 
   我的:
     书单: /books/ || anzhiyu-icon-book
-    影视: /movies/ || anzhiyu-icon-fan
-    追番: /bangumis/ || anzhiyu-icon-bilibili
+    影视: /movies/ || anzhiyu-icon-bilibili
+    # 追番: /bangumis/ || anzhiyu-icon-bilibili
     # 相册集: /album/ || anzhiyu-icon-images
   #   小空调: /air-conditioner/ || anzhiyu-icon-fan
 

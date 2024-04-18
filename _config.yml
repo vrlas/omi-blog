@@ -74,7 +74,7 @@ deploy:
   type: ''
 
 bangumi: # 追番设置
-  enable: true
+  enable: false
   source: bili
   vmid: 490196005
   title: '追番列表'
@@ -112,6 +112,6 @@ douban:
   movie:
     path: movies/index.html
     title: '影视'
-    quote: '这个世界上有足够多的傻瓜'
+    quote: '生命不息,追剧不止'
     option:
   timeout: 10000

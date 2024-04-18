@@ -6,7 +6,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "npx hexo douban & hexo bangumi -u & npx hexo generate",
+    "build": "npx hexo douban & npx hexo generate",
     "clean": "npx hexo clean",
     "deploy": "npx hexo deploy",
     "dev": "npx hexo server"
