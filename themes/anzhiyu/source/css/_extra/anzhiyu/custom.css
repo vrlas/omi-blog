@@ -226,37 +226,37 @@ html.hide-aside .layout > div:first-child {
 
 /* 追番&豆瓣 */
 /* bilibli番剧插件 */
-#page #article-container .bangumi-tab.bangumi-active, #page #article-container .hexo-douban-tab.hexo-douban-tab-active{
+#page #article-container .hexo-douban-tab.hexo-douban-tab-active{
   background: var(--anzhiyu-theme);
   color: var(--anzhiyu-ahoverbg);
   border-radius: 10px;
 }
-#page #article-container .bangumi-tabs .bangumi-tab,#page #article-container .hexo-douban-tabs .hexo-douban-tab {
+#page #article-container .hexo-douban-tabs .hexo-douban-tab {
   border-bottom: none;
   border-radius: 10px;
 }
-#page #article-container .bangumi-tabs a.bangumi-tab:hover, #page #article-container .hexo-douban-tabs a.hexo-douban-tab:hover {
+#page #article-container .hexo-douban-tabs a.hexo-douban-tab:hover {
   text-decoration: none !important;
   border-radius: 10px;
   column-gap: var(--anzhiyu-ahoverbg);
 }
-#page #article-container .bangumi-pagination a.bangumi-button,#page #article-container .hexo-douban-pagination a.hexo-douban-button {
+#page #article-container .hexo-douban-pagination a.hexo-douban-button {
   border-bottom: none;
   border-radius: 10px;
 }
-.bangumi-button:hover,.hexo-douban-button:hover {
+.hexo-douban-button:hover {
   background: var(--anzhiyu-theme) !important;
   border-radius: 10px !important;
   color: var(--anzhiyu-ahoverbg) !important;
 }
-a.bangumi-button.bangumi-nextpage:hover,a.hexo-douban-button.bangumi-nextpage:hover {
+a.hexo-douban-button.bangumi-nextpage:hover {
   text-decoration: none !important;
 }
-.bangumi-button,.hexo-douban-tab {
+.hexo-douban-tab {
   padding: 5px 10px !important;
 }
 
-a.bangumi-tab,a.hexo-douban-button {
+a.hexo-douban-button {
   padding: 5px 10px !important;
 }
 svg.icon.faa-tada {

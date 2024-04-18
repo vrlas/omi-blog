@@ -109,4 +109,9 @@ douban:
     title: '书单'
     quote: '当你从书页上抬眼，然后合上书本依然感觉到，住在那片光里'
     option:
+  movie:
+    path: movies/index.html
+    title: '影视'
+    quote: '这个世界上有足够多的傻瓜'
+    option:
   timeout: 10000
