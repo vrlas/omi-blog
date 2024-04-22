@@ -6,7 +6,7 @@ author: omi
 language: zh-CN
 timezone: ''
 
-url: http://example.com
+url: http://omi-m.fun
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
