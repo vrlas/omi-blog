@@ -115,17 +115,3 @@ douban:
     quote: '生命不息,追剧不止'
     option:
   timeout: 10000
-
-feed:
-  enable: true
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
-  icon: icon.png
-  autodiscovery: true
-  template:
