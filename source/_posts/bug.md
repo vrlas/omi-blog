@@ -20,6 +20,16 @@ $ git config --global https.proxy socks5 127.0.0.1:(代理端口)
 $ git config --global https.proxy 127.0.0.1:(代理端口)
 $ git config --global http.proxy 127.0.0.1:(代理端口)
 ```
+## FireBase
+### firebase login无法登录
+```bash
+$ set NODE_TLS_REJECT_UNAUTHORIZED=0
+# 先将vpn设置为全局代理
+$ set http_proxy=http://127.0.0.1:vpn端口
+$ set https_proxy=http://127.0.0.1:vpn端口
+# 然后执行
+$ firebase login --no-localhost
+```
 ## flutter
 ### flutter下载canvasKit或包卡住
 ```bash

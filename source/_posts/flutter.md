@@ -104,6 +104,93 @@ return SelectableText.rich(
 桌面端:禁用顶部栏,用于定制应用窗口的标题栏
 ### audioplayers
 音频播放
+### dio
+网络请求
+
+## 常用功能实现
+### flutter修改第三方库源码
+```yaml
+# 修改pubspec.yaml(将包整体放到自定义项目根目录下)
+dependencies:
+  lecle_yoyo_player:
+    path: plugins/lecle_yoyo_player-0.0.8
+```
+### 竖屏播放
+```dart
+return SizedBox.expand(
+  child: FittedBox(
+    alignment: Alignment.center,
+    fit: BoxFit.cover,
+    child: SizedBox(
+      height: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.height,
+      child: YoYoPlayer(
+        url: url
+      )
+    )
+  )
+)
+```
+### 画中画功能
+- MainActivity.kt
+```kt
+package com.example.mv
+
+import androidx.annotation.NonNull
+import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugin.common.MethodChannel
+import android.os.Bundle
+import android.app.PictureInPictureParams
+import android.util.Rational
+import android.graphics.Rect
+
+class MainActivity: FlutterActivity() {
+  private val CHANNEL = "picture_in_picture"
+
+  override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+    super.configureFlutterEngine(flutterEngine)
+    MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler {
+      call, result ->
+        if (call.method == "enter_pip") {
+          enterPictureInPictureMode()
+          result.success("success")
+        } else {
+          result.notImplemented()
+        }
+    }
+  }
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    
+    // 自动进入画中画模式(不建议放onCreate,所有页面最小化都会进入pip)
+    setPictureInPictureParams(PictureInPictureParams.Builder()
+      .setAspectRatio(Rational(16, 9))
+      .setAutoEnterEnabled(true)
+      .build())
+  }
+}
+```
+- AndroidManifest.xml
+```xml
+<activity
+	<!-- 启用画中画 -->
+	android:supportsPictureInPicture="true"
+	...
+>
+```
+- flutter widget
+```dart
+static const platform = MethodChannel('picture_in_picture');
+
+Future<void> enterPictureInPictureMode() async {
+	await platform.invokeMethod('enter_pip');
+}
+
+onTap(() { enterPictureInPictureMode() })
+```
+
 ## 其他
 ### 开发环境
 1. 安装flutter sdk
