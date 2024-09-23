@@ -67,6 +67,22 @@ date: 2023-07-21 00:00:00
 6. 避免使用@import堵塞dom渲染
 7. 对代码进行tree-shaking,剔除无用代码
 {% endfolding %}
+### 从输入url到渲染页面
+{% folding 查看答案 %}
+1. 地址栏输入url并回车
+2. 浏览器查找当前url是否有缓存,并比较缓存是否过期
+3. dns解析url的ip地址
+4. 根据ip建立tcp连接(三次握手)
+5. 发起http请求
+6. 服务器处理请求,浏览器接收响应
+7. 生成cssom树和dom树,并进行浏览器绘制
+8. 关闭tcp连接(四次挥手)
+{% endfolding %}
+### 强缓存与协商缓存
+{% folding 查看答案 %}
+`强缓存`: 浏览器不会向服务器发送任何请求,直接从本地缓存中读取文件并返回200状态码
+`协商缓存`: 
+{% endfolding %}
 ## CSS
 ### link与@import区别
 {% folding 查看答案 %}
@@ -99,6 +115,15 @@ selector:focus {}
 3. localStorage只要不删除就一直存在,常用于持久化存储
 4. cookie大小不超过4k,sessionStorage不超过5M,localStorage不超过20M
 5. 都只能存储字符串,如需存储对象需要JSON.stringify编码后存储
+{% endfolding %}
+### 聊聊宏任务与微任务
+{% folding 查看答案 %}
+在javascript中,所有的任务(`宏任务`,`微任务`)都会被加入到一个任务队列中,由事件循环(`Event Loop`)负责调度执行。
+当javascript空闲时,事件循环会从任务队列中取出任务,并按照顺序执行。
+`微任务的优先级高于宏任务`,也就是当主线程空闲时,如果有微任务存在,就会被优先执行,直到微任务队列为空,然后事件循环才会从宏任务队列中取出下一个任务执行
+常见宏任务与微任务:
+宏任务: script标签代码,setTimeout/setInterval,I/O操作,UI渲染,postMessage,Web Workers,IndexedDB等
+微任务: Promise的then方法,MutationObserver,process.nextTick,Object.observe等
 {% endfolding %}
 ### js数据类型
 {% folding 查看答案 %}
@@ -160,6 +185,18 @@ bindFn2(1,2)
 1. v-if是`惰性`的,满足条件才会进行渲染
 2. v-show无论是否满足都会渲染,后续只是css`display`的切换
 3. v-if有更高的切换开销,v-show有更高的初始渲染开销(v-show适合频繁切换,反之v-if)
+{% endfolding %}
+### vue2与vue3的双向数据绑定
+{% folding 查看答案 %}
+双向数据绑定: `数据劫持`+`发布订阅模式(观察者模式)`
+`Vue2`在实例初始化时遍历data中的全部属性,并使用Object.defineProperty把这些属性全部转换为getter/setter并劫持,在数据发生变化时发布消息给订阅者,并触发相应回调,存在如下问题
+- 初始化需要遍历所有对象key,如果对象层次较深,性能不好
+- 通知更新对象需要维护大量dep实例和watcher实例,额外占用内存较多
+- Object.defineProperty无法监听数组元素变化,只能通过劫持重写数组方法
+- 动态新增、删除对象属性无法拦截,只能用set/delete API代替
+- 不支持Map/Set等数据结构
+
+`Vue3`使用Prxoy来监听数据的变化
 {% endfolding %}
 ## HTTP
 #### get请求和post请求的区别

@@ -448,34 +448,46 @@ span {
 ### 垂直居中方案
 
 ```css
-/* 太古早的方案就不写了(如table布局),结构: main>div */
+/* 太古早的方案就不写了(如table布局) */
 /* 方案1 */
-main {
+.father {
   display: flex|grid;
 }
-div {
+.son {
   margin: auto;
 }
 /* 方案2 */
-main {
-  display: flex;
+.father {
+  display: flex|grid;
   justify-content: center;
   align-items: center;
 }
 /* 方案3 */
-div {
+.son {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 /* 方案4 */
-main {
-  display: grid;
+.father {
+  display: flex|grid;
 }
-div {
+.son {
   justify-self: center;
   align-self: center;
+}
+/* 方案5 */
+.father {
+  position: relative;
+}
+.son {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 ```
 ## Tailwind CSS
@@ -811,6 +823,10 @@ $ gg
 $ dG
 # 跳转指定行(n为行数)
 $ :n
+```
+### vscode ctrl+v换行问题
+```bash
+# settings>Format On Paste勾选上
 ```
 ### 快速框选截图
 ```
