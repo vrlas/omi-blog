@@ -80,8 +80,8 @@ date: 2023-07-21 00:00:00
 {% endfolding %}
 ### 强缓存与协商缓存
 {% folding 查看答案 %}
-`强缓存`: 浏览器不会向服务器发送任何请求,直接从本地缓存中读取文件并返回200状态码
-`协商缓存`: 
+`强缓存`: 浏览器不会向服务器发送任何请求,直接从本地缓存(内存/硬盘)中读取文件并返回200状态码
+`协商缓存`: 向服务器发送请求，服务器会根据request header的参数来判断是否命中协商缓存,如果命中,则返回304状态码并带上新的response header通知浏览器从缓存中读取资源
 {% endfolding %}
 ## CSS
 ### link与@import区别
@@ -115,6 +115,20 @@ selector:focus {}
 3. localStorage只要不删除就一直存在,常用于持久化存储
 4. cookie大小不超过4k,sessionStorage不超过5M,localStorage不超过20M
 5. 都只能存储字符串,如需存储对象需要JSON.stringify编码后存储
+{% endfolding %}
+### es6(es2015)的几个重要特性
+{% folding 查看答案 %}
+1. let和const关键字
+2. 箭头函数
+3. 模板字符串
+4. 解构赋值
+5. 默认参数
+6. 展开运算符和其余参数
+7. class
+8. 模块化
+9. Promise
+
+`资料参考：`[《ES6（ES2015）有什么新特性？》](https://www.explainthis.io/zh-hans/swe/es6)
 {% endfolding %}
 ### 聊聊宏任务与微任务
 {% folding 查看答案 %}
@@ -179,6 +193,18 @@ bindFn2(1,2)
 {% folding 查看答案 %}
 如果外部作用域有权访问另外一个函数内部的局部变量时，那就产生了闭包
 {% endfolding %}
+### 说一下js的作用域与作用域链
+{% folding 查看答案 %}
+> `作用域`指的是当前的执行上下文，在其中的值和表达式“可见”（可被访问）。如果一个变量或表达式不在当前的作用域中，那么它是不可用的。作用域也可以堆叠成层次结构，子作用域可以访问父作用域，反过来则不行。
+> `作用域链`指的是当 JavaScript 使用每一个变数的时候，会先尝试在当前作用域中寻找该变数，若在当前的作用域找不到该变数，会一直往父层作用域寻找，直到全局作用域还是没找到，就会直接报错，这一层一层的关系，就是作用域链
+
+JavaScript的作用域分为三种：
+1. 全局作用域
+2. 函数作用域
+3. 块级作用域: 只有`let`和`const`声明的变量会属于块级作用域
+
+
+{% endfolding %}
 ## Vue.js
 ### v-show与v-if的区别
 {% folding 查看答案 %}
@@ -227,4 +253,5 @@ bindFn2(1,2)
 {% endfolding %}
 ---
 [2024前端高频面试题之-- JS篇](https://juejin.cn/post/7330065707358208010)
+[JavaScript 面试题详解](https://www.explainthis.io/zh-hans/swe/javascript)
 [标准内置对象-Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)

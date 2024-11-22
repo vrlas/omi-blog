@@ -695,6 +695,58 @@ window.onload = () => {
 ```js
 el.style.color = `#${Math.random().toString().slice(2,8)}`
 ```
+### class常见方法
+```js
+// 1. extends继承
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+  eat() {
+    console.log(`${this.name} eat food.`)
+  }
+  speak() {
+    console.log(`${this.name} makes a noise.`)
+  }
+}
+class Dog extends Animal {
+  constructor(name) {
+    super(name)
+  }
+  speak() {
+    console.log(`${this.name} barks.`)
+  }
+}
+
+const dog = new Dog("HAHA")
+dog.eat() // HAHA eat food.
+dog.speak() // HAHA barks.
+
+// 2. static静态方法: 不能被实例继承，只能通过class本身调用
+class MathHelper {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+const math = new MathHelper();
+console.log(math.add(2, 3)); // Uncaught TypeError: math.add is not a function
+// 只能通过 class 本身访问
+console.log(MathHelper.add(2, 3)); // 5
+
+// 3. Private fields: 私有域
+class Animal {
+  #color = 'red'
+
+  getColor() {
+    return this.#color
+  }
+}
+
+const animal = new Animal()
+console.log(animal.getColor()) // 'red'
+console.log(animal.#color) // SyntaxError: Private field '#color' must be declared in an enclosing class
+```
 ### 类数组转数组
 ```js
 Array.prototype.slice.call(arrayLike)

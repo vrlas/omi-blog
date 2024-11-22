@@ -32,6 +32,53 @@ switch(day) {
 }
 ```
 
+#### 闭包实现状态管理
+```js
+function useState(initialState) {
+  let state = initialState
+  function getState() {
+    return state
+  }
+  function setState(updatedState) {
+    state = updatedState
+  }
+  return [getState, setState]
+}
+
+const [count, setCount] = useState(0)
+
+count() // 0
+setCount(1)
+count() // 1
+setCount(100)
+count() // 100
+```
+
+#### 闭包实现数据处理缓存
+```js
+// 在函数内部用一个对象存储输入的参数，如果下次再输入相同的参数，那就比较一下对象的属性。如果有缓存，就直接把值从这个对象里面取出来
+function memorize(fn) {
+  const cache = {}
+
+  return (...args) => {
+    const key = JSON.stringify(args)
+    if (key in cache) {
+      return cache[key]
+    } else {
+      const val = fn(...args)
+      cache[key]= val
+      return val
+    }
+  }
+}
+
+const add = (num) => num + 1
+
+const adder = memorize(add)
+console.log(adder(1))
+console.log(adder(2))
+```
+
 #### Promise实现请求链式
 ```js
 reqData1(params1).then(res1 => {
