@@ -229,7 +229,7 @@ const myDirective = {
 ```
 ## 内置组件
 ### Transition的6种状态
-![](https://cn.vuejs.org/assets/transition-classes.2BufuvZR.png)
+![](https://cn.vuejs.org/assets/transition-classes.DYG5-69l.png)
 ```html
 <Transition name="fade">...</Transition>
 
