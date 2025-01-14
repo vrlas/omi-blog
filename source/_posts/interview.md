@@ -107,6 +107,22 @@ selector:focus {}
 2. 让无框高的盒子填满父容器
 3. 宽高100%如果存在其他子元素,会导致高度问题
 {% endfolding %}
+### 谈谈你对BFC的理解
+{% folding 查看答案 %}
+BFC即`块级格式上下文`,是一个完全独立的空间,让空间里的子元素不会影响到外面的布局
+
+BFC的触发条件：
+1. body根元素
+2. 浮动元素(float属性不为none)
+3. 绝对定位元素(position属性为absolute或fixed)
+4. display属性为(inline-block、table-cell、table-caption、flex、grid、inline-flex、inline-grid)的元素
+5. overflow属性不为visible的元素
+
+BFC的常见作用：
+1. 解决margin重叠问题
+2. 清除浮动(解决浮动造成的父元素高度塌陷问题)
+3. 自适应多栏布局
+{% endfolding %}
 ## JavaScript
 ### cookie/sessionStorage/localStorage的区别
 {% folding 查看答案 %}
@@ -141,7 +157,10 @@ selector:focus {}
 {% endfolding %}
 ### js数据类型
 {% folding 查看答案 %}
-js数据类型包括`null`,`undefined`,`boolean`,`number`,`string`,`symbol`,`bigInt`,`object`
+1. 基本数据类型(`null`,`undefined`,`boolean`,`number`,`string`,`symbol`,`bigInt`)
+2. 引用数据类型(`object`)
+
+基本数据类型保存在`栈`中,引用数据类型保存在`堆`中,栈只保存的该引用数据的内存地址
 {% endfolding %}
 ### continue,break,return的区别
 {% folding 查看答案 %}

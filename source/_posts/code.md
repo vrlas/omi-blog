@@ -54,6 +54,46 @@ setCount(100)
 count() // 100
 ```
 
+#### 手写深拷贝
+```js
+const deepCopy = (obj, visited = new WeakMap()) => {
+  // 检查循环引用
+  if (visited.has(obj)) return visited.get(obj)
+  // 如果是原始值或 null，直接返回
+  if (obj === null || typeof obj !== "object") return obj
+  // 如果是数组，创建一个新数组并递归复制每个元素
+  if (Array.isArray(obj)) {
+    const newArray = []
+    // 设置映射以处理循环引用
+    visited.set(obj, newArray)
+    for (let i = 0; i < obj.length; i++) {
+      newArray[i] = deepCopy(obj[i], visited)
+    }
+    return newArray
+  }
+  // 如果是对象，创建一个新对象并递归复制每个属性
+  const newObj = {}
+  // 设置映射以处理循环引用
+  visited.set(obj, newObj)
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) newObj[key] = deepCopy(obj[key], visited)
+  }
+  return newObj
+}
+
+const originalObject = {
+  a: 1,
+  b: [2, 3],
+  c: { d: 4, e: { f: 5 } },
+  fn: function () {
+    console.log("Hello from function!")
+  }
+}
+const deepCopyObject = deepCopy(originalObject)
+console.log(deepCopyObject) // { a: 1, b: [ 2, 3 ], c: { d: 4, e: { f: 5 } }, func: [Function: func] }
+deepCopyObject.func() // 输出：Hello from function!
+```
+
 #### 闭包实现数据处理缓存
 ```js
 // 在函数内部用一个对象存储输入的参数，如果下次再输入相同的参数，那就比较一下对象的属性。如果有缓存，就直接把值从这个对象里面取出来

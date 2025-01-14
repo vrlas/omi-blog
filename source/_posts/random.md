@@ -515,15 +515,19 @@ Array.prototype.isPrototypeOf(obj)
 ```
 ### Proxy&Reflect
 ```js
-const obj = { a: 1, b: 2 }
-const proxy = new Proxy(obj, {
+const target = {}
+const handler = {
   get(target, prop, receiver) {
     return Reflect.get(target, prop, receiver)
   },
   set(target, key, val, receiver) {
     return Reflect.set(target, key, val, receiver)
   }
-})
+}
+const proxy = new Proxy(target, handler)
+
+proxy.name = 'John' // 调用 set 拦截器，触发 Reflect.set
+console.log(proxy.name) // 调用 get 拦截器，触发 Reflect.get
 ```
 ### Promise
 ```js
