@@ -18,16 +18,21 @@ date: 2023-07-21 00:00:00
 `怪异模式`: 浏览器使用自己的标准解析页面,可能会导致在不同浏览器呈现不一样的效果
 {% endfolding %}
 
-### 标准盒模型与ie盒模型区别
-{% folding 查看答案 %}
-![](/images/interview/1.png)
-![](/images/interview/2.png)
-{% endfolding %}
-
 ### 说下常见行内元素与块级元素,以及区别
 {% folding 查看答案 %}
 `inline(行内元素)`: 元素不会换行,无法设置宽高,只能包含文本和其他行内元素(`a` `span` `img` `button` `input` `label`)
-`block(块级元素)`: 元素会换行,宽度默认为父元素宽度,可以包含其他元素(`div` `p` `h1~h6` `p` `ul`)
+`block(块级元素)`: 元素会换行,宽度默认为父元素宽度,可以包含其他元素(`div` `p` `h1~h6` `ul` `li`)
+{% endfolding %}
+
+### H5的新元素与新特性
+{% folding 查看答案 %}
+语义化标签: `section`、`aside`、`article`、`footer`、`header`、`nav`
+音视频: `video`、`audio`
+绘图: `canvas`、`svg`
+表单控件: `date`、`time`、`email`
+地理定位: getCurrentPosition()获取用户定位
+拖拽释放: drage Api
+本地离线存储: `localStorage`、`sessionStorage`
 {% endfolding %}
 
 ### 常见浏览器内核
@@ -107,6 +112,13 @@ selector:focus {}
 2. 让无框高的盒子填满父容器
 3. 宽高100%如果存在其他子元素,会导致高度问题
 {% endfolding %}
+
+### 标准盒模型与ie盒模型区别
+{% folding 查看答案 %}
+![](/images/interview/1.png)
+![](/images/interview/2.png)
+{% endfolding %}
+
 ### 谈谈你对BFC的理解
 {% folding 查看答案 %}
 BFC即`块级格式上下文`,是一个完全独立的空间,让空间里的子元素不会影响到外面的布局
