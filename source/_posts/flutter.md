@@ -199,10 +199,17 @@ onTap(() { enterPictureInPictureMode() })
 4. 安装android studio(安装sdk)
 5. android settings -> system settings -> android sdk -> sdk tools(勾选commond-line tools下载)
 
-### 连接真机(无数据线)
+### 真机连接
+#### usb调试
 1. adb tcpip 任意端口(此时需要数据线连接)
-2. 断开数据线
+2. 此时就可断开数据线
 3. adb connect 手机ip:刚才的端口
+
+#### 无线调试(配对码)
+1. adb pair ip:port
+![](/images/flutter/1.jpg)
+2. 输入配对码
+2. adb connect ip:port(与开始的ip:port可能不同)
 
 ### 常用命令
 ```bash

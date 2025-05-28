@@ -835,6 +835,12 @@ $ git rev-list -n 1 v3.0.0
 git config --global user.name "sineava"
 git config --global user.email "sineava@163.com"
 ```
+
+### git远程项目修改
+```bash
+# 因为账户变更,需要做git整体迁移
+git remote set-url origin new_git_url
+```
 ## nginx
 
 ### 设置默认跳转https
