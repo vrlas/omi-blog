@@ -6,7 +6,7 @@ author: omi
 language: zh-CN
 timezone: ''
 
-url: http://omi-m.fun
+url: https://omi-blog-ten.vercel.app
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
