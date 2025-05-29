@@ -135,6 +135,16 @@ BFC的常见作用：
 2. 清除浮动(解决浮动造成的父元素高度塌陷问题)
 3. 自适应多栏布局
 {% endfolding %}
+
+### 简单说下可替换元素
+{% folding 查看答案 %}
+`可替换元素`: 指一些展现效果不由css控制的元素,css只可控制尺寸位置,无法控制其本身。常见的如audio,video,img,常见的表单元素等。
+
+tip: 如果非要修改可替换元素自带样式,可开启chrome如下开关进行调试修改
+![](/images/interview/4.png)
+![](/images/interview/5.png)
+{% endfolding %}
+
 ## JavaScript
 ### cookie/sessionStorage/localStorage的区别
 {% folding 查看答案 %}
@@ -201,7 +211,7 @@ BFC的常见作用：
 ### stopPagation()与preventDefault()的区别
 {% folding 查看答案 %}
 1. stopPagation会阻止事件冒泡与捕获
-2. preventDefault会组织事件的默认行为(如链接跳转/右键菜单/表单提交等)
+2. preventDefault会阻止事件的默认行为(如链接跳转/右键菜单/表单提交等)
 {% endfolding %}
 ### var/let/const的区别
 {% folding 查看答案 %}
@@ -273,6 +283,21 @@ JavaScript的作用域分为三种：
 
 `Vue3`使用Prxoy来监听数据的变化
 {% endfolding %}
+
+### ref与reactive的区别
+{% folding 查看答案 %}
+1. 数据类型: ref可用于任意数据类型,reactive只可用于引用数据类型
+2. 访问方式: ref通过.value调用,reactive可直接访问
+3. 适用场景: ref更适合基本类型或需要替换整个对象的场景,reactive适合复杂对象
+4. 实现方式: ref通过Object.defineProperty实现响应式,reactive基于Proxy
+{% endfolding %}
+
+### watch与watchEffect的区别
+{% folding 查看答案 %}
+`watch`与`watchEffect`都能响应式地执行有副作用的回调
+- `watch`只追踪明确侦听的数据源,此外仅在数据源确实改变时才会触发回调,`watch`会避免在发生副作用时追踪依赖
+- `watchEffect`会在副作用发生期间追踪依赖,它会在同步执行过程中,`自动`追踪所有能访问到的响应式属性,代码更简洁,但依赖关系不明显
+{% endfolding %}
 ## HTTP
 #### get请求和post请求的区别
 {% folding 查看答案 %}
@@ -299,6 +324,7 @@ JavaScript的作用域分为三种：
 - `404`: 找不到如何与URI相匹配的资源
 - `500`: 服务器内部错误
 - `503`: 服务器端暂时无法处理请求(常见原因是服务器因维护或重载而停机)
+- `504`: 客户端作为网关或代理服务器时,未能及时从上游服务器收到响应
 {% endfolding %}
 ---
 [2024前端高频面试题之-- JS篇](https://juejin.cn/post/7330065707358208010)

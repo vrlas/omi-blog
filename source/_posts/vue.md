@@ -116,6 +116,10 @@ import { watch, watchEffect } from 'vue'
 // 指定追踪依赖变化
 watch(key, async (newVal) => {
   newVal && (user.value = await (fetch(`https://jsonplaceholder.typicode.com/todos/${key.value}`).then(res => res.json())))
+}, {
+  immediate: bool, // 是否创建之初立即执行一次
+  once: bool, // 当依赖发生变更时,是否只执行一次
+  deep: bool // 是否进行深层监听,如果为数字(v3.5+),表示最大遍历深度
 })
 
 // watchEffect会自动追踪依赖属性变化
