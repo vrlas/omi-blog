@@ -252,6 +252,13 @@ bindFn2(1,2)
 {% folding 查看答案 %}
 如果外部作用域有权访问另外一个函数内部的局部变量时，那就产生了闭包
 {% endfolding %}
+### slice与splice的区别
+{% folding 查看答案 %}
+1. 用法不同: `slice(start, end-不包括end)` `splice(start-参数必须, deleteCount, item1, item2, ...itemN)`
+2. slice不会修改原数组,splice则会
+3. slice可用于字符串与数组,splice只能作用于数组
+4. slice返回处理后副本,splice返回一个装有被删除元素的数组
+{% endfolding %}
 ### 说一下js的作用域与作用域链
 {% folding 查看答案 %}
 > `作用域`指的是当前的执行上下文，在其中的值和表达式“可见”（可被访问）。如果一个变量或表达式不在当前的作用域中，那么它是不可用的。作用域也可以堆叠成层次结构，子作用域可以访问父作用域，反过来则不行。
@@ -261,8 +268,6 @@ JavaScript的作用域分为三种：
 1. 全局作用域
 2. 函数作用域
 3. 块级作用域: 只有`let`和`const`声明的变量会属于块级作用域
-
-
 {% endfolding %}
 ## Vue.js
 ### v-show与v-if的区别

@@ -71,6 +71,15 @@ bool get isDesktopDevice => !kIsWeb && (Platform.isMacOS || Platform.isWindows |
 bool get isMobileDeviceOrWeb => kIsWeb || isMobileDevice;
 bool get isDesktopDeviceOrWeb => kIsWeb || isDesktopDevice;
 ```
+
+### 隐藏顶部栏
+```dart
+void main() async {
+  SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(statusBarColor: Colors.transparent);
+  SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
+}
+```
+
 ### 跳转页面
 ```dart
 Navigator.of(context).push(
@@ -209,7 +218,16 @@ onTap(() { enterPictureInPictureMode() })
 1. adb pair ip:port
 ![](/images/flutter/1.jpg)
 2. 输入配对码
-2. adb connect ip:port(与开始的ip:port可能不同)
+3. adb tcpip 10086(自定义端口-这一步千万别少,不然直接adb连接息屏就会断连接)
+4. adb connect ip:10086
+
+#### 真机调试避雷(点名iqoo)
+##### 每次debug运行都会重新安装,导致flutter无法继续热重载
+```
+# gradle.properties添加如下代码
+android.injected.testOnly=false
+```
+
 
 ### 常用命令
 ```bash
@@ -239,6 +257,7 @@ MaterialApp(
 stless // 快速创建无状态class
 stful  // 快速创建状态class
 ```
+
 ---
 [flutter中文文档](https://flutter.cn/)
 [dartpad](https://dartpad.cn/)
