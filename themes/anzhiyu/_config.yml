@@ -30,13 +30,13 @@ nav:
     - title: 项目
       item:
         - name: omi物料库
-          link: https://omi-sigma.vercel.app/
-          icon: https://o-m.fun/favicon.ico
-    # - title: 网页
-    #   item:
-    #     - name: omi图床
-    #       link: https://image.omi-m.fun/
-    #       icon: https://image.omi-m.fun/favicon.ico
+          link: https://a.o-m.fun
+          icon: https://a.o-m.fun/vite.svg
+    - title: app
+      item:
+        - name: 爆米花-追番
+          link: https://wwzw.lanzoub.com/iJ0ag31n91sb
+          icon: /img/app.png
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -1061,7 +1061,7 @@ home_top:
     tips: 前端
     title: omi物料库
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
-    link: https://material.omi-m.fun
+    link: https://a.o-m.fun/vite.svg
 
 # 朋友圈配置
 friends_vue:
