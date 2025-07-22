@@ -29,10 +29,6 @@ div
   if theme.universe.enable
     canvas(id="universe")
     script(async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js")
-
-  //- 控制台打印信息
-  if theme.console.enable
-    != partial("includes/anzhiyu/log-js.pug", {}, { cache: true })
   
   //- 随机文章
   script(async src="/anzhiyu/random.js")

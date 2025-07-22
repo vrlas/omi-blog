@@ -1,7 +1,12 @@
-title: omi
-subtitle: '生能尽欢 死亦无憾'
+title: 'omi | 前端开发与面试笔记'
+subtitle: 'Vue/UniApp/前端工程化'
 description: 'Omi的前端博客,记录日常开发和面试题等,同时收录自己的一些个人项目'
-keywords: 前端,博客,hexo美化,代码
+keywords:  
+  - 前端面试题2025,Vue3面试题,JavaScript八股文  
+  - UniApp跨端开发,小程序实战
+  - Hexo主题美化,博客SEO优化
+  - 前端工程化,TypeScript教程
+  - 个人项目开源,前端学习路线
 author: omi
 language: zh-CN
 timezone: ''
