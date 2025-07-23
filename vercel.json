@@ -1,3 +1,6 @@
 {
-  "regions": ["hkg1"]
+  "regions": ["hkg1"],
+  "engines": {
+    "node": "24.4.1"
+  }
 }
