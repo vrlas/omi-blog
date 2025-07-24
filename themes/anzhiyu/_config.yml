@@ -513,7 +513,7 @@ footer:
     linkList:
       # - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
       #   text: 主题
-      - link: https://www.npmjs.com/package/picture-bed?activeTab=code
+      - link: https://www.npmjs.com/package/o-bed?activeTab=code
         text: 图床
       # - link: https://beian.miit.gov.cn/
       #   text: 湘ICP备-xxxxxxx号
