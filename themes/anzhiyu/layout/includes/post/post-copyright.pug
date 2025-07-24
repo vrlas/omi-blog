@@ -18,7 +18,7 @@ if theme.post_copyright.enable && page.copyright !== false
       if (page.copyright_author && page.copyright_author !== config.author)
         a.post-copyright__reprint(title="该文章为转载文章，注意版权协议" href=url_for(url)) 转载
       else
-        a.post-copyright__original(title="该文章为原创文章，注意版权协议" href=url_for(url)) 原创
+        a.post-copyright__original(title="该文章为原创文章，注意版权协议") 原创
       a.post-copyright-title
         span(onclick=`rm.copyPageUrl('${theme.post_copyright.decode ? decodeURI(url) : url}')`)=pageTitle
     //- ptool
