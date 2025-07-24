@@ -1,7 +1,7 @@
 ---
 title: bug修复
-top_img: /images/wallpapers/1.jpg
-cover: /images/wallpapers/1.jpg
+top_img: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/8.jpg
+cover: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/8.jpg
 tags:
   - 前端
   - bug

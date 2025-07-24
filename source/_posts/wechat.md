@@ -1,7 +1,7 @@
 ---
 title: 微信原生小程序
-top_img: /images/wallpapers/8.jpg
-cover: /images/wallpapers/8.jpg
+top_img: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/2.jpg
+cover: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/2.jpg
 tags:
   - wechat
 categories:

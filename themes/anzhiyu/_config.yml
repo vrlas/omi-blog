@@ -31,12 +31,12 @@ nav:
       item:
         - name: omi物料库
           link: https://a.o-m.fun
-          icon: https://a.o-m.fun/vite.svg
+          icon: https://npm.onmicrosoft.cn/o-bed@1.0.0/img/vite.svg
     - title: app
       item:
         - name: 爆米花-追番
           link: https://wwzw.lanzoub.com/iJ0ag31n91sb
-          icon: /img/app.png
+          icon: https://npm.onmicrosoft.cn/o-bed@1.0.0/img/app.png
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -74,7 +74,7 @@ social:
 author_status:
   enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
-  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
+  statusImg: "https://npm.onmicrosoft.cn/o-bed@1.0.0/img/64e6ce9c507bb.png"
   skills:
     # - 🤖️ 数码科技爱好者
     # - 🔍 分享与热心帮助
@@ -141,7 +141,7 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://npm.elemecdn.com/picture-bed@1.0.7/common/avatar.png
+  img: https://npm.onmicrosoft.cn/o-bed@1.0.0/img/avatar.png
   effect: false
 
 # Disable all banner image
@@ -332,7 +332,7 @@ valine:
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: https://ds01shck.lc-cn-n1-shared.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /img/comment_bg.png # valine background
+  bg: https://npm.onmicrosoft.cn/o-bed@1.0.5/img/comment_bg.png # valine background
   emojiCDN: //i0.hdslb.com/bfs/emote/ # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
@@ -774,7 +774,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/picture-bed@1.0.7/common/avatar.png # 自定加载动画义头像
+  avatar: https://npm.onmicrosoft.cn/o-bed@1.0.0/img/avatar.png # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -1060,7 +1060,7 @@ home_top:
   banner:
     tips: 前端
     title: omi物料库
-    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
+    image: https://npm.onmicrosoft.cn/o-bed@1.0.0/img/645fa3cf90d70.webp
     link: https://a.o-m.fun
 
 # 朋友圈配置
@@ -1110,7 +1110,7 @@ comment_barrage_config:
 # 左下角音乐配置项
 # https://github.com/metowolf/MetingJS
 nav_music:
-  enable: true
+  enable: false
   console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 9788524646
   server: netease
@@ -1261,14 +1261,14 @@ CDN:
     # instantsearch:
     # docsearch_js:
     # docsearch_css:
-    # pjax:
-    # blueimp_md5:
-    # valine:
+    pjax: https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js
+    blueimp_md5: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/md5.min.js
+    valine: https://npm.onmicrosoft.cn/o-bed@1.0.6/js/Valine.min.js
     # twikoo:
     # waline_js:
     # waline_css:
-    # sharejs:
-    # sharejs_css:
+    sharejs: https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js
+    sharejs_css: https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css
     # mathjax:
     # katex:
     # katex_copytex:
@@ -1276,15 +1276,15 @@ CDN:
     # canvas_ribbon:
     # canvas_fluttering_ribbon:
     # canvas_nest:
-    # lazyload:
-    # instantpage:
+    lazyload: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/lazyload.iife.min.js
+    instantpage: https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js
     # typed:
     # pangu:
-    # fancybox_css:
-    # fancybox:
+    fancybox_css: https://npm.onmicrosoft.cn/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css
+    fancybox: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/fancybox.umd.js
     # medium_zoom:
-    # snackbar_css:
-    # snackbar:
+    snackbar_css: https://npm.onmicrosoft.cn/o-bed@1.0.0/css/snackbar.min.css
+    snackbar: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/snackbar.min.js
     # activate_power_mode:
     # fireworks:
     # click_heart:
@@ -1292,21 +1292,21 @@ CDN:
     # fontawesome:
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
-    # aplayer_css:
-    # aplayer_js:
-    # meting_js:
+    aplayer_css: https://npm.onmicrosoft.cn/o-bed@1.0.0/css/APlayer.min.css
+    aplayer_js: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/APlayer.min.js
+    meting_js: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/Meting2.min.js
     # meting_api:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    # pace_js:
-    # pace_default_css:
+    pace_js: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/pace.min.js
+    pace_default_css: https://npm.onmicrosoft.cn/o-bed@1.0.0/css/progress_bar.css
     # countup_js:
     # gsap_js:
     # busuanzi:
     # rightmenu:
-    # waterfall:
-    # ali_iconfont_css:
-    # accesskey_js:
+    waterfall: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/waterfall.js
+    ali_iconfont_css: https://npm.onmicrosoft.cn/o-bed@1.0.1/css/ali_iconfont_css.css
+    accesskey_js: https://npm.onmicrosoft.cn/o-bed@1.0.0/js/accesskey.js

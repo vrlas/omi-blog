@@ -1,7 +1,7 @@
 ---
 title: 前端面试题
-top_img: /images/wallpapers/5.jpg
-cover: /images/wallpapers/5.jpg
+top_img: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/5.jpg
+cover: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/5.jpg
 tags:
   - 面试题
 categories:
@@ -48,7 +48,7 @@ date: 2023-07-21 00:00:00
 - `async`下,js加载与执行与dom渲染并行(概率执行期间dom还没渲染完毕,拿不到dom)
 - `defer`下,js加载与dom渲染并行,等渲染完毕再执行加载的js
 
-![](/images/interview/3.png)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/interview/3.png)
 {% endfolding %}
 
 ### 什么是重绘和回流
@@ -115,8 +115,8 @@ selector:focus {}
 
 ### 标准盒模型与ie盒模型区别
 {% folding 查看答案 %}
-![](/images/interview/1.png)
-![](/images/interview/2.png)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/interview/1.png)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/interview/2.png)
 {% endfolding %}
 
 ### 谈谈你对BFC的理解
@@ -141,8 +141,8 @@ BFC的常见作用：
 `可替换元素`: 指一些展现效果不由css控制的元素,css只可控制尺寸位置,无法控制其本身。常见的如audio,video,img,常见的表单元素等。
 
 tip: 如果非要修改可替换元素自带样式,可开启chrome如下开关进行调试修改
-![](/images/interview/4.png)
-![](/images/interview/5.png)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/interview/4.png)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/interview/5.png)
 {% endfolding %}
 
 ## JavaScript

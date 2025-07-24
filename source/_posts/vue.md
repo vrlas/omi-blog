@@ -1,7 +1,7 @@
 ---
 title: 重读vue3
-top_img: /images/wallpapers/7.jpg
-cover: /images/wallpapers/7.jpg
+top_img: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/3.jpg
+cover: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/3.jpg
 tags:
   - 前端
   - vue

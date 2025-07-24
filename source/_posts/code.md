@@ -1,7 +1,7 @@
 ---
 title: 代码片段
-top_img: /images/wallpapers/3.jpg
-cover: /images/wallpapers/3.jpg
+top_img: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/7.jpg
+cover: https://npm.onmicrosoft.cn/o-bed@1.0.3/img/cover/7.jpg
 tags:
   - 前端
   - 代码

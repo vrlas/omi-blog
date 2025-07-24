@@ -13,57 +13,36 @@ hexo.extend.filter.register("before_generate", () => {
   const { CDN } = themeConfig;
 
   const thirdPartySrc = hexo.render.renderSync({ path: path.join(hexo.theme_dir, "/plugins.yml"), engine: "yaml" });
-  const prefix = "https://blog.anheyu.com/"
   const internalSrc = {
     main: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/main.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/main.js",
     },
     utils: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/utils.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/utils.js",
     },
     translate: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/tw_cn.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/tw_cn.js",
     },
     local_search: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/search/local-search.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/local-search.js",
     },
     algolia_js: {
-      name: prefix + "hexo-theme-anzhiyu",
-      file: prefix + "js/search/algolia.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/algolia.js",
     },
     random_friends_post_js: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/anzhiyu/random_friends_post.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/random_friends_post.js",
     },
     right_click_menu_js: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/anzhiyu/right_click_menu.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/right_click_menu.js",
     },
     comment_barrage_js: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/anzhiyu/comment_barrage.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/comment_barrage.js",
     },
     ai_abstract_js: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/anzhiyu/ai_abstract.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/ai_abstract.js",
     },
     people_js: {
-      name: "hexo-theme-anzhiyu",
-      file: prefix + "js/anzhiyu/people.js",
-      version,
+      file: "https://npm.onmicrosoft.cn/o-bed@1.0.0/js/people.js",
     },
   };
 
@@ -94,7 +73,7 @@ hexo.extend.filter.register("before_generate", () => {
       const cdnSource = {
         local: cond === "internal" ? cdnjs_file : `/pluginsSrc/${name}/${file}`,
         jsdelivr: `https://cdn.jsdelivr.net/npm/${name}${verType}/${min_file}`,
-        unpkg: `https://unpkg.com/${name}${verType}/${file}`,
+        unpkg: `https://npm.onmicrosoft.cn/${name}${verType}/${file}`,
         cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
         elemecdn: `https://npm.elemecdn.com/${name}${verType}/${file}`,
         onmicrosoft: `https://npm.onmicrosoft.cn/${name}${verType}/${file}`,
@@ -106,7 +85,7 @@ hexo.extend.filter.register("before_generate", () => {
       data[key] = cdnSource[type];
     });
 
-    if (cond === "internal") data["main_css"] = "css/index.css";
+    if (cond === "internal") data["main_css"] = "https://npm.onmicrosoft.cn/o-bed@1.0.7/css/blog.min.css";
     return data;
   };
 
