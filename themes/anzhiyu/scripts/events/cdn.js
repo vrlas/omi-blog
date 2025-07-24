@@ -85,7 +85,7 @@ hexo.extend.filter.register("before_generate", () => {
       data[key] = cdnSource[type];
     });
 
-    if (cond === "internal") data["main_css"] = "https://npm.onmicrosoft.cn/o-bed@1.0.7/css/blog.min.css";
+    if (cond === "internal") data["main_css"] = "https://npm.onmicrosoft.cn/o-bed@1.0.8/css/blog.min.css";
     return data;
   };
 

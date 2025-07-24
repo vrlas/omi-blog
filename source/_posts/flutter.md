@@ -216,7 +216,7 @@ onTap(() { enterPictureInPictureMode() })
 
 #### 无线调试(配对码)
 1. adb pair ip:port
-![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/img/flutter/1.jpg)
+![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/flutter/1.jpg)
 2. 输入配对码
 3. adb tcpip 10086(自定义端口-这一步千万别少,不然直接adb连接息屏就会断连接)
 4. adb connect ip:10086
