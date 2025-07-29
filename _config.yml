@@ -11,7 +11,7 @@ author: omi
 language: zh-CN
 timezone: ''
 
-url: https://omi-blog-ten.vercel.app
+url: https://o-m.fun
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -100,8 +100,8 @@ abbrlink:
 
 sitemap:
   path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
+# baidusitemap:
+#   path: baidusitemap.xml
 
 douban:
   id: 203633414
