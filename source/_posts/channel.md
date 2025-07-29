@@ -43,18 +43,18 @@ dependencies {
 #### main.kt
 ```kotlin
 import android.app.Activity
+import android.content.Context
 import android.nfc.NfcAdapter
 // 如果这个报错,请检查下uniapp-v8-release.aar
 import io.dcloud.feature.uniapp.annotation.UniJSMethod
 import io.dcloud.feature.uniapp.common.UniModule
 
 class NfcDataReader : UniModule() {
-
   @UniJSMethod(uiThread = true)
   fun startListening(callback: (tagId: String) -> Unit) {
-    val activity = mUniSDKInstance?.context as? Activity ?: return
-    NfcAdapter.getDefaultAdapter(activity)?.enableReaderMode(
-      activity,
+    val ctx = mUniSDKInstance?.context as Context
+    NfcAdapter.getDefaultAdapter(ctx)?.enableReaderMode(
+      ctx as Activity,
       { tag -> callback(tag.id.joinToString("") { "%02X".format(it) }) },
       NfcAdapter.FLAG_READER_NFC_A,
       null
@@ -63,8 +63,9 @@ class NfcDataReader : UniModule() {
 
   @UniJSMethod(uiThread = true)
   fun stopListening() {
-    (mUniSDKInstance?.context as? Activity)?.let { activity ->
-      NfcAdapter.getDefaultAdapter(activity)?.disableReaderMode(activity)
+    val ctx = mUniSDKInstance?.context as Context
+    ctx.let { activity ->
+      NfcAdapter.getDefaultAdapter(activity)?.disableReaderMode(ctx as Activity)
     }
   }
 }
@@ -130,6 +131,57 @@ nfc.startListening(({tagId}) => console.log(`nfc识别码: ${tagId}`))
 ### 使用本地基座运行项目
 
 ![](https://npm.onmicrosoft.cn/o-bed@1.0.9/img/channel/7.png)
+
+## 代码片段
+### 实现消息通知
+```kotlin
+// 权限配置: <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+// const notification = uni.requireNativePlugin('notification')
+// notification.reqNotify("测试", "哈哈哈")
+package com.omi.nfc
+
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
+import android.content.Context.NOTIFICATION_SERVICE
+import android.content.Intent
+import android.provider.Settings
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import io.dcloud.feature.uniapp.annotation.UniJSMethod
+import io.dcloud.feature.uniapp.common.UniModule
+
+class UniNotify: UniModule() {
+
+  @UniJSMethod(uiThread = true)
+  fun reqNotify(title: String, text: String) {
+    val ctx = mUniSDKInstance?.context as Context
+    val isEnabled = NotificationManagerCompat.from(ctx).areNotificationsEnabled()
+    // 判断用户是否开启通知权限
+    if (!isEnabled) {
+      val intent = Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply {
+        putExtra(Settings.EXTRA_APP_PACKAGE, ctx.packageName)
+      }
+      ctx.startActivity(intent)
+    } else {
+      val mChannel = NotificationChannel("notification", "所有通知", NotificationManager.IMPORTANCE_DEFAULT)
+      // 注册通知频道
+      val notificationManager = ctx.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+      notificationManager.createNotificationChannel(mChannel)
+      // 创建通知
+      val notification = NotificationCompat.Builder(ctx, "notification")
+        .setSmallIcon(R.drawable.ic_notification)
+        .setContentTitle(title)
+        .setContentText(text)
+        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+        .build()
+      // 通知
+      notificationManager.notify(1001, notification)
+    }
+  }
+}
+```
 
 ---
 [uniapp安卓插件开发教程](https://nativesupport.dcloud.net.cn/NativePlugin/course/android.html)
