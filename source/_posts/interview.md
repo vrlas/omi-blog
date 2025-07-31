@@ -8,7 +8,7 @@ categories:
   - 面试
 abbrlink: '20802113'
 date: 2023-07-21 00:00:00
-updated: 2025-07-11 00:00:00
+updated: 2025-07-31 00:00:00
 ---
 
 ## HTML
@@ -116,6 +116,8 @@ selector:focus {}
 
 ### 标准盒模型与ie盒模型区别
 {% folding 查看答案 %}
+{% tip success %}两者可以通过box-sizing属性进行切换(`border-box: ie盒模型`,`content-box: 标准盒模型`){% endtip %}
+
 ![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/interview/1.png)
 ![](https://npm.onmicrosoft.cn/o-bed@1.0.3/img/interview/2.png)
 {% endfolding %}
