@@ -213,6 +213,11 @@ const CustomElement = defineCustomElement({
 customElements.define('mine-element', CustomElement)
 // 此时html就可使用<mine-element msg="影子节点"></mine-element>
 ```
+### 组件异步加载
+```js
+defineAsyncComponent(() => import('./components/AsyncComp.vue')) // 返回一个promise
+```
+
 ### 指令hook
 ```js
 const myDirective = {

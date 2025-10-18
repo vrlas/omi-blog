@@ -8,7 +8,7 @@ categories:
   - 面试
 abbrlink: '20802113'
 date: 2023-07-21 00:00:00
-updated: 2025-07-31 00:00:00
+updated: 2025-10-18 17:28:00
 ---
 
 ## HTML
@@ -290,6 +290,11 @@ JavaScript的作用域分为三种：
 - 不支持Map/Set等数据结构
 
 `Vue3`使用Prxoy来监听数据的变化
+{% endfolding %}
+### vue router hash模式与history模式的区别
+{% folding 查看答案 %}
+1. hash模式(`createWebHashHistory`): 使用URL的hash来模拟一个完整的URL,当hash改变时,会触发页面跳转,不会向服务器发送请求,对后端无影响,但会导致URL中带着#号,seo不友好
+2. history模式(`createWebHistory`): 利用HTML5的History API,通过pushState/replaceState改变URL,不会触发页面跳转,对后端有影响,需要服务器配置支持
 {% endfolding %}
 
 ### ref与reactive的区别
