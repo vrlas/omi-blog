@@ -9,7 +9,7 @@
     "build": "npx hexo douban & npx hexo generate",
     "clean": "npx hexo clean",
     "deploy": "npx hexo deploy",
-    "dev": "npx hexo server --watch"
+    "dev": "npx hexo server"
   },
   "hexo": {
     "version": "7.3.0"
